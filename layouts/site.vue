@@ -60,7 +60,7 @@
         <div>
           <h3 class="footer-heading">About ABAN 1 Solutions </h3>
           <p class="text-gray-300 text-sm mt-2">
-            ABAN 1 Solutions is dedicated to innovative energy solutions, ensuring a sustainable future for all.
+            ABAN 1 Solutions is committed to providing reliable, high-quality services that help you stay compliant, ensure system performance, and protect the health and safety of your environment.
           </p>
         </div>
 
