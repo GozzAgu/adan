@@ -3,7 +3,7 @@
     <AboutMain />
     <HomeCoreValues />
     <HomeWhyChoose />
-    <HomeTeam />
+    <!-- <HomeTeam /> -->
   </div>
 </template>
 

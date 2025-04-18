@@ -4,13 +4,18 @@
       <div class="text-center">
         <h1 class="text-4xl md:text-5xl font-bold">Our Services</h1>
         <p class="mt-2 text-lg text-gray-300">
-          Visioni & Strauss offers an extensive range of services designed to meet diverse client needs with precision and excellence.
+          ABAN 1 Solutions offers an extensive range of services designed to meet diverse client needs with precision and excellence.
         </p>
       </div>
     </div>
 
     <div class="max-w-7xl mx-auto mt-12 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-      <div v-for="(service, index) in services" :key="index" class="service-card">
+      <div
+        v-for="(service, index) in services"
+        :key="index"
+        class="service-card"
+        :class="{ 'highlighted-service': highlightIndex === index }"
+      >
         <div class="relative w-full h-48 overflow-hidden rounded-lg">
           <img :src="service.image" :alt="service.title" class="w-full h-full object-cover">
         </div>
@@ -27,48 +32,57 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const highlightIndex = ref(null)
+
+onMounted(() => {
+  const highlightParam = route.query.highlight
+  if (highlightParam !== undefined) {
+    highlightIndex.value = parseInt(highlightParam)
+    setTimeout(() => {
+      highlightIndex.value = null
+    }, 2000)
+  }
+})
+
 const services = [
   { 
-    title: "Gas Products & Chemical Supply", 
-    icon: "mdi:gas-cylinder", 
-    description: "Reliable, quality-assured gas and chemical supply for energy and industrial applications.", 
-    image: "https://images.unsplash.com/photo-1510467181625-c419e443bdfa?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    title: "L8 Compliance & Water Treatment",
+    icon: "mdi:water-check", 
+    description: "Ensuring your systems meet the necessary legal and health regulations concerning water hygiene and Legionella control.", 
+    image: "https://images.unsplash.com/photo-1533077162801-86490c593afb?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
   },
   { 
-    title: "Road Construction & Infrastructure", 
-    icon: "mdi:road-variant", 
-    description: "Building durable roads, bridges, culverts, and drainage systems for sustainable transport networks.", 
-    image: "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-  },
-  { 
-    title: "Solar Power & Renewable Energy", 
-    icon: "mdi:solar-power", 
-    description: "Cutting-edge solar energy solutions for cost-effective and sustainable power generation.", 
-    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-  },
-  { 
-    title: "Renovation & Building Works", 
-    icon: "mdi:hammer-wrench", 
-    description: "Modernizing structures with a focus on functionality, safety, and aesthetic excellence.", 
-    image: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-  },
-  { 
-    title: "Water & Sewage Engineering", 
+    title: "CWST Inspections & Cleaning ",
     icon: "mdi:water-pump", 
-    description: "Advanced water management and sewage treatment solutions for safe and sustainable water use.", 
-    image: "https://images.unsplash.com/photo-1582669300365-630322b86cf9?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    description: "Conducting thorough inspections and cleaning of Cold Water Storage Tanks (CWST) to maintain water quality and prevent contamination.", 
+    image: "https://images.unsplash.com/photo-1627098241506-344dea0aa27b?q=80&w=3431&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
   },
   { 
-    title: "Civil Engineering & Estate Planning", 
+    title: "Temperature Monitoring", 
+    icon: "mdi:thermometer",
+    description: "Regular monitoring of hot and cold water systems to ensure they function within the required temperature ranges for safety and efficiency.", 
+    image: "https://images.unsplash.com/photo-1619140099965-06d74aaf51fa?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "Risk Assessments & Surveys",
+    icon: "mdi:clipboard-check", 
+    description: "Identifying potential risks in your water and heating systems and providing solutions to mitigate those risks.", 
+    image: "https://images.unsplash.com/photo-1595448831936-822eeb8b5695?q=80&w=3479&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "Consultancy & Diagnostics", 
+    icon: "mdi:account-question",
+    description: "Offering expert advice and diagnostic services to optimize system performance and resolve any issues that may arise.", 
+    image: "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  },
+  { 
+    title: "Closed & Opened System Management", 
     icon: "mdi:home-modern", 
-    description: "Comprehensive civil engineering services for estate planning and development.", 
-    image: "https://images.unsplash.com/photo-1625722662233-297060231b85?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-  },
-  { 
-    title: "General Supplies", 
-    icon: "mdi:package-variant-closed", 
-    description: "Providing essential supplies to support seamless project execution.", 
-    image: "https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?q=80&w=3466&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    description: "Managing both closed and open systems to ensure they are properly maintained, preventing issues such as corrosion, scale buildup, and energy inefficiency.", 
+    image: "https://images.unsplash.com/photo-1715635795252-38b8f66026d6?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
   }
 ];
 </script>
@@ -84,5 +98,9 @@ const services = [
 
 .service-card img {
   @apply w-full h-48 object-cover rounded-lg;
+}
+
+.highlighted-service {
+  @apply ring-4 ring-red-700 scale-105 transition-all duration-300;
 }
 </style>

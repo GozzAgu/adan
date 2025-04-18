@@ -17,10 +17,10 @@
 
     <div ref="content" class="relative text-center px-6 z-10 max-w-3xl opacity-0">
       <h1 ref="heading" class="text-4xl md:text-6xl font-bold uppercase leading-tight">
-        Shaping a Sustainable Future
+        Safety for your environment
       </h1>
       <p ref="paragraph" class="mt-4 text-lg md:text-xl text-gray-200">
-        Discover how we innovate to create cleaner energy solutions for a better tomorrow.
+        We are committed to providing reliable, high-quality services that help you stay compliant, ensure system performance, and protect the health and safety of your environment.
       </p>
       <div ref="buttonContainer" class="mt-6">
         <NuxtLink to="/about" class="cta-button">Learn More</NuxtLink>
@@ -38,8 +38,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const images = [
-  "https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=3592&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1521747116042-5a810fda9664?q=80&w=3592&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1623906841898-d6a7dc0204f5?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1660997598847-bdad1ad226c7?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
 
 const content = ref(null);

@@ -6,11 +6,8 @@
       </h2>
 
       <p ref="paragraphRef" class="text-gray-700 dark:text-gray-300 text-xs md:text-sm opacity-0">
-        Visioni & Strauss is a dynamic, private indigenous company proudly based in Nigeria.
-        Fully registered with the Corporate Affairs Commission (CAC) in July 2007 (Registration Number 698755), 
-        we bring a unique blend of multidisciplinary expertise to the table spanning Oil & Gas, Infrastructure, 
-        Renewable Energy, and Civil Engineering. Our legacy is built on delivering exceptional 
-        quality and integrated solutions to Government bodies, corporate entities, and individual clients alike.
+        ABAN 1 Solutions is a provider of comprehensive services focused on maintaining and optimizing water and heating systems. 
+        Our expertise spans across  the water industry ensuring that your systems are compliant, safe, and efficient.
       </p>
 
       <div ref="cardWrapperRef" class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 card-wrapper opacity-0">

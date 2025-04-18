@@ -7,7 +7,7 @@
     <HomeCoreValues />
     <HomeWhyChoose />
     <HomeCallToAction />
-    <HomeTeam />
+    <!-- <HomeTeam /> -->
   </div>
 </template>
 

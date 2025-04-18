@@ -4,8 +4,7 @@
       <div class="container mx-auto flex justify-between items-center py-4 px-6">
         <div class="flex items-center">
           <NuxtLink class="flex items-center gap-x-2" to="/">
-            <img src="/Visioni Icon (No Background).png" alt="VISIONE" class="h-10">
-            <p class="text-sm md:text-base font-black text-yellow-500">VIS<span class="text-red-700">IONI</span></p>
+            <p class="text-sm md:text-base font-black text-yellow-500">ABAN 1 SOLUTIONS</p>
           </NuxtLink>
         </div>
 
@@ -59,9 +58,9 @@
     <footer class="bg-gray-900 text-white border-t dark:border-gray-700">
       <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 class="footer-heading">About Visione</h3>
+          <h3 class="footer-heading">About ABAN 1 Solutions </h3>
           <p class="text-gray-300 text-sm mt-2">
-            Visione is dedicated to innovative energy solutions, ensuring a sustainable future for all.
+            ABAN 1 Solutions is dedicated to innovative energy solutions, ensuring a sustainable future for all.
           </p>
         </div>
 
@@ -86,7 +85,7 @@
       </div>
 
       <div class="border-t dark:border-gray-700 py-4 text-center text-sm text-gray-400">
-        <p>&copy; 2025 Visione. All rights reserved.</p>
+        <p>&copy; 2025 ABAN 1 Solutions . All rights reserved.</p>
         <div class="flex justify-center space-x-6 mt-2">
           <NuxtLink to="/privacy" class="footer-bottom-link">Privacy Policy</NuxtLink>
           <NuxtLink to="/terms" class="footer-bottom-link">Terms of Use</NuxtLink>
