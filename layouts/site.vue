@@ -74,13 +74,21 @@
           </ul>
         </div>
 
-        <div>
-          <h3 class="footer-heading">Sustainability</h3>
-          <ul class="space-y-2">
-            <li><NuxtLink to="/climate" class="footer-link">Climate Initiatives</NuxtLink></li>
-            <li><NuxtLink to="/renewables" class="footer-link">Renewable Energy</NuxtLink></li>
-            <li><NuxtLink to="/safety" class="footer-link">Safety & Responsibility</NuxtLink></li>
-          </ul>
+        <div class="">
+          <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md space-y-4">
+            <div>
+              <h4 class="text-sm font-bold text-gray-900 dark:text-gray-100">📍 Reach us on:</h4>
+              <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">
+                info@adan.com | 07703434985 | 07415103880 | 02045038409
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-gray-900 dark:text-gray-100">📍 Find us here:</h4>
+              <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">
+                14 verve Apartment, 5 mercury gardens Rm1 3fb
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -107,6 +115,13 @@ const toggleMenu = () => {
 
 const route = useRoute();
 const isActive = (path) => route.path === path;
+
+watch(
+  () => route.path,
+  () => {
+    menuOpen.value = false
+  }
+)
 </script>
 
 <style scoped>
