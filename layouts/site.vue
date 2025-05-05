@@ -79,7 +79,7 @@
             <div>
               <h4 class="text-sm font-bold text-gray-900 dark:text-gray-100">📍 Reach us on:</h4>
               <p class="text-xs text-gray-600 dark:text-gray-300 mt-1">
-                info@adan.com | 07703434985 | 07415103880 | 02045038409
+                info@aban1solutions.com | 07703434985 | 07415103880 | 02045038409
               </p>
             </div>
             <div>
