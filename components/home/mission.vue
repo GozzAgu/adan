@@ -16,8 +16,9 @@
         <div ref="missionCardRef" class="info-card mission-card opacity-0">
           <h3>Our Mission</h3>
           <p>
-            To leverage expertise and cutting-edge technology to deliver innovative, 
-            sustainable, and high-quality solutions, ensuring every project sets a new standard.
+            To ensure water quality and regulatory compliance with unwavering professionalism and integrity. 
+            We deliver reliable testing, expert guidance, and sustainable solutions to safeguard public 
+            health and protect the environment.
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <HomeHero />
-    <HomeProvisions />
+    <!-- <HomeProvisions /> -->
     <HomeProdserv />
     <HomeMission />
     <HomeCoreValues />
