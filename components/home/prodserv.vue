@@ -11,19 +11,19 @@ const services = [
     title: "L8 Compliance & Water Treatment",
     icon: "mdi:water-check", 
     description: "Ensuring your systems meet the necessary legal and health regulations concerning water hygiene and Legionella control.", 
-    image: "https://images.unsplash.com/photo-1533077162801-86490c593afb?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    image: "https://martinlishman.com/wp-content/uploads/MiniTemp-Crop-Temperature-Monitor.jpg" 
   },
   { 
     title: "CWST Inspections & Cleaning ",
     icon: "mdi:water-pump", 
     description: "Conducting thorough inspections and cleaning of Cold Water Storage Tanks (CWST) to maintain water quality and prevent contamination.", 
-    image: "https://images.unsplash.com/photo-1627098241506-344dea0aa27b?q=80&w=3431&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    image: "https://ml5mxeitll4f.i.optimole.com/w:1091/h:1500/q:mauto/https://tankanddrain.ie/wp-content/uploads/2023/06/coldwater.png" 
   },
   { 
     title: "Temperature Monitoring", 
     icon: "mdi:thermometer",
     description: "Regular monitoring of hot and cold water systems to ensure they function within the required temperature ranges for safety and efficiency.", 
-    image: "https://images.unsplash.com/photo-1619140099965-06d74aaf51fa?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    image: "https://phoenixservicesltd.co.uk/wp-content/uploads/2019/12/hotwater-system-698x1024.jpg" 
   },
   { 
     title: "Risk Assessments & Surveys",
