@@ -9,8 +9,7 @@
         <div ref="visionCardRef" class="info-card vision-card opacity-0">
           <h3>Our Vision</h3>
           <p>
-            We aspire to be the most preferred integrated solution partner by continuously building 
-            on our experience and embracing innovation to drive sustainable progress.
+            To create a future where every business, home, and city has access to safe, clean, and compliant water systems.
           </p>
         </div>
         <div ref="missionCardRef" class="info-card mission-card opacity-0">
